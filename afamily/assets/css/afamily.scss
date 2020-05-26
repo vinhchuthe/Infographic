@@ -1,0 +1,803 @@
+%relative {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+%w980 {
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+%img {
+    width: 100%;
+    display: block;
+}
+
+%section-detail {
+    padding: 0 13px 0 16px;
+}
+%section-container {
+    border: 1px solid #df3e61;
+}
+%section-title {
+    background-color: #df3e61;
+    padding: 30px 0;
+    position: relative;
+
+    p {
+        font-size: 58px;
+        color: #ffffff;
+        font-family: DINRoundOTMedium;
+        text-align: center;
+        line-height: 60px;
+    }
+    &::before {
+        content: "";
+        width: 160px;
+        height: 100%;
+        background-image: url("../image/deco-left.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+    &::after {
+        content: "";
+        width: 120px;
+        height: 100%;
+        background-image: url("../image/deco-right.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        bottom: -15px;
+        right: 0;
+        z-index: 3;
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px !important;
+    background-color: #e4e4e4;
+}
+
+.vct-wrapper {
+    @extend %relative;
+    padding-top: 44px;
+
+    .desktop {
+        @extend %relative;
+
+        .w980 {
+            @extend %w980;
+            background-color: #fff;
+
+            .desktop-inner {
+                @extend %relative;
+
+                // banner
+                .banner {
+                    @extend %relative;
+
+                    img {
+                        @extend %img;
+                    }
+                }
+
+                // Section
+                .section {
+                    position: relative;
+
+                    &.section1 {
+                        .section-detail {
+                            @extend %section-detail;
+
+                            .section-container {
+                                @extend %section-container;
+                                margin-top: -25px;
+
+                                // Timeline
+                                .s1-timeline {
+                                    .timeline-box {
+                                        margin: 0 100px;
+                                        padding-top: 100px;
+                                        border-left: 1px solid #df3e61;
+
+                                        .timeline-block {
+                                            padding-left: 140px;
+                                            margin-bottom: 70px;
+                                            transform: translateY(-40px);
+                                            transition: all 1s;
+
+                                            .title {
+                                                position: relative;
+                                                z-index: 2;
+                                                padding-left: 100px;
+
+                                                span {
+                                                    font-size: 40px;
+                                                    line-height: 41px;
+                                                    font-family: SVNGilroyItalic;
+                                                    color: #fff;
+                                                    background-color: #df3e61;
+                                                    padding: 4px 20px;
+                                                }
+                                                &::before {
+                                                    content: "";
+                                                    width: 7px;
+                                                    height: 7px;
+                                                    background-color: #df3e61;
+                                                    border-radius: 50%;
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    left: -144px;
+                                                    transform: translateY(-50%);
+                                                    z-index: 1;
+                                                }
+                                                &::after {
+                                                    content: "";
+                                                    width: 240px;
+                                                    height: 1px;
+                                                    background-color: #df3e61;
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    left: -140px;
+                                                    transform: translateY(-50%);
+                                                    z-index: 1;
+                                                }
+                                            }
+                                            .text-group-box {
+                                                margin: 40px 0;
+                                                .group {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    margin: 20px 0 30px;
+
+                                                    .group-icon {
+                                                        width: 90px;
+                                                    }
+                                                    .text-group {
+                                                        margin-left: 20px;
+                                                        p {
+                                                            font-size: 60px;
+                                                            color: #df3e61;
+                                                            line-height: 61px;
+                                                            font-family: DINRoundOTMedium;
+                                                            margin-bottom: 15px;
+                                                        }
+                                                        span {
+                                                            font-size: 25px;
+                                                            font-family: SVNGothamBook;
+                                                            color: #000000;
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            &:last-child {
+                                                margin-bottom: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.section2 {
+                        .section-detail {
+                            @extend %section-detail;
+
+                            .section-container {
+                                @extend %section-container;
+
+                                .section-title {
+                                    @extend %section-title;
+                                }
+                                .section-content {
+                                    //   like-box
+                                    .like-container {
+                                        display: flex;
+                                        justify-content: center;
+                                        width: 100%;
+                                        padding: 40px 0 20px;
+
+                                        .like-group {
+                                            width: 50%;
+                                            margin-left: 20px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            flex-direction: column;
+
+                                            .gr-icon {
+                                                display: block;
+                                                width: 240px;
+
+                                                img {
+                                                    width: 70px;
+                                                }
+                                            }
+
+                                            .like-content {
+                                                p {
+                                                    font-size: 25px;
+                                                    color: #000000;
+                                                    font-family: SVNGothamBook;
+                                                    margin: 10px 0;
+                                                }
+                                                span {
+                                                    font-size: 60px;
+                                                    line-height: 61px;
+                                                    color: #df3e61;
+                                                    font-family: DINRoundOTMedium;
+                                                }
+                                            }
+                                            &.border-left {
+                                                border-right: 1px solid #df3e61;
+                                            }
+                                        }
+                                    }
+
+                                    //   Post
+                                    .post {
+                                        margin-top: 40px;
+                                        padding-bottom: 50px;
+
+                                        .title-box {
+                                            text-align: center;
+                                            padding: 20px 0;
+                                            span {
+                                                font-size: 36px;
+                                                line-height: 40px;
+                                                color: #fff;
+                                                background-color: #df3e61;
+                                                font-family: SVNGilroyItalic;
+                                                padding: 5px 25px;
+                                            }
+                                        }
+                                        .post-content {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            margin-top: 20px;
+
+                                            .post-icon {
+                                                width: 90px;
+                                            }
+                                            .post-text {
+                                                margin-left: 30px;
+
+                                                p {
+                                                    font-size: 58px;
+                                                    line-height: 60px;
+                                                    color: #df3e61;
+                                                    font-family: DINRoundOTMedium;
+                                                    span {
+                                                        font-size: 24px;
+                                                        color: #000000;
+                                                        font-family: SVNGothamBook;
+
+                                                        &.interaction {
+                                                            font-size: 14px;
+                                                            line-height: 1;
+                                                            display: block;
+                                                            text-align: right;
+                                                            margin-right: -35px;
+                                                            margin-top: -10px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .single-line {
+                                        height: 1px;
+                                        width: 100%;
+                                        background-color: #df3e61;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.section3 {
+                        .section-detail {
+                            @extend %section-detail;
+
+                            .section-container {
+                                @extend %section-container;
+
+                                .section-title {
+                                    @extend %section-title;
+                                }
+
+                                // chart
+                                .chart-container {
+                                    .chart {
+                                        margin-top: 50px;
+
+                                        &.chart1 {
+                                            #svg-chart-pie {
+                                                display: block;
+                                                margin: 0 auto;
+                                            }
+                                        }
+                                        &.chart2 {
+                                            #svg-chart-col {
+                                                display: block;
+                                                margin: 0 auto;
+                                            }
+                                        }
+                                        &.chart3 {
+                                            margin-top: 80px;
+
+                                            #Layer_1 {
+                                                display: block;
+                                                margin: 0 auto;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.section4 {
+                        .section-detail {
+                            @extend %section-detail;
+
+                            .section-container {
+                                @extend %section-container;
+
+                                .section-title {
+                                    @extend %section-title;
+                                }
+
+                                .category-section {
+                                    .category {
+                                        display: flex;
+                                        justify-content: space-around;
+                                        width: 100%;
+                                        margin-top: 50px;
+
+                                        .category-box {
+                                            img {
+                                                @extend %img;
+                                                max-width: 100px;
+                                                margin: 0 auto;
+                                                min-height: 95px;
+                                            }
+                                            .icon-group {
+                                                .icon-tag {
+                                                    position: absolute;
+                                                    font-family: DINRoundOTMedium;
+                                                    font-size: 16px;
+                                                    color: #df3e61;
+                                                }
+                                                .categoty-icon {
+                                                    font-family: DINRoundOTMedium;
+                                                    font-size: 36px;
+                                                    line-height: 40px;
+                                                    color: #df3e61;
+                                                    border: 1px solid #df3e61;
+                                                    padding: 7px 20px;
+                                                    border-radius: 10px;
+                                                    display: inline-block;
+                                                    margin-top: 25px;
+                                                }
+                                            }
+                                        }
+
+                                        &.category-bot {
+                                            margin-bottom: 40px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.section5 {
+                        .section-detail {
+                            @extend %section-detail;
+
+                            .section-container {
+                                @extend %section-container;
+
+                                .section-title {
+                                    @extend %section-title;
+                                    &::before {
+                                        background-image: url("../image/deco-left2.png");
+                                    }
+                                }
+
+                                // vertical-timline
+                                .vertical-timeline {
+                                    position: relative;
+                                    margin: 0 auto;
+                                    max-width: 100%;
+
+                                    &::after {
+                                        content: "";
+                                        width: 1px;
+                                        height: 100%;
+                                        background-color: #df3e61;
+                                        position: absolute;
+                                        top: 0%;
+                                        left: 50%;
+                                        z-index: 1;
+                                    }
+                                    .timeline-group {
+                                        display: flex;
+                                        width: 100%;
+                                        position: relative;
+                                        .title {
+                                            position: absolute;
+                                            top: 40px;
+                                            left: 50%;
+                                            transform: translateX(-50%);
+                                            z-index: 2;
+                                            padding: 8px 25px;
+                                            border: 1px solid #df3e61;
+                                            background-color: #fff;
+                                            span {
+                                                font-family: SVNGilroyItalic;
+                                                font-size: 40px;
+                                                color: #df3e61;
+                                                line-height: 41px;
+                                            }
+                                        }
+                                        .left {
+                                            position: relative;
+                                            width: 50%;
+
+                                            img {
+                                                @extend %img;
+                                            }
+
+                                            .timeline-container {
+                                                left: unset;
+                                                right: 0;
+                                            }
+                                        }
+                                        .right {
+                                            position: relative;
+                                            width: 50%;
+
+                                            img {
+                                                @extend %img;
+                                            }
+                                        }
+                                        .more-btn {
+                                            position: absolute;
+                                            bottom: 30px;
+                                            left: 50%;
+                                            transform: translateX(-50%);
+                                            padding: 10px 30px;
+                                            background-color: #df3e61;
+                                            text-decoration: none;
+                                            border-radius: 10px;
+                                            font-size: 30px;
+                                            font-family: DINRoundOTMedium;
+                                            color: #ffffff;
+                                        }
+                                        .timeline-container {
+                                            position: absolute;
+                                            bottom: 3%;
+                                            left: 0;
+                                            transform: translateY(40px);
+                                            transition: all 1s;
+                                            display: flex;
+                                            flex-direction: column;
+
+                                            &:last-of-type {
+                                                transform: none;
+                                            }
+
+                                            li {
+                                                margin: 25px 0;
+                                                display: inline-block;
+                                            }
+                                            .timeline-item {
+                                                position: relative;
+
+                                                &::before {
+                                                    content: "";
+                                                    width: 7px;
+                                                    height: 7px;
+                                                    border-radius: 50%;
+                                                    background-color: #df3e61;
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    transform: translateY(-50%);
+                                                    z-index: 1;
+                                                }
+                                                &::after {
+                                                    content: "";
+                                                    width: 100px;
+                                                    height: 1px;
+                                                    background-color: #df3e61;
+                                                    position: absolute;
+                                                    z-index: 1;
+                                                    top: 50%;
+                                                }
+                                                p {
+                                                    font-size: 25px;
+                                                    color: #df3e61;
+                                                    font-family: DINRoundOTMedium;
+                                                    line-height: 27px;
+                                                }
+                                            }
+                                            .item-black-title {
+                                                margin-left: 20px;
+                                                margin-bottom: 0;
+
+                                                p {
+                                                    font-size: 20px;
+                                                    font-family: DINRoundOTMedium;
+                                                    color: #000000;
+                                                }
+                                            }
+                                            .item-custom-title {
+                                                padding-left: 120px;
+                                                margin-top: 0;
+                                                p {
+                                                    font-family: SVNGilroyItalic;
+                                                    font-size: 20px;
+                                                    color: #000000;
+
+                                                    span {
+                                                        font-family: DINRoundOTMedium;
+                                                        font-size: 55px;
+                                                        color: #df3e61;
+                                                        line-height: 60px;
+                                                    }
+                                                }
+                                            }
+                                            .item-black-title-left {
+                                                margin-right: 50px;
+                                                margin-bottom: 0;
+
+                                                p {
+                                                    font-size: 20px;
+                                                    font-family: DINRoundOTMedium;
+                                                    color: #000000;
+                                                }
+                                            }
+                                            .item-custom-title-left {
+                                                padding-right: 50px;
+
+                                                p {
+                                                    font-family: SVNGilroyItalic;
+                                                    font-size: 20px;
+                                                    color: #000000;
+
+                                                    span {
+                                                        font-family: DINRoundOTMedium;
+                                                        font-size: 55px;
+                                                        color: #df3e61;
+                                                        line-height: 60px;
+                                                    }
+                                                }
+                                            }
+                                            .item-pink-title-left {
+                                                margin-right: 50px;
+                                                margin-bottom: 0;
+
+                                                p {
+                                                    font-size: 20px;
+                                                    font-family: DINRoundOTMedium;
+                                                    color: #df3e61;
+                                                }
+                                            }
+
+                                            .timeline-item-icon {
+                                                position: relative;
+                                                margin: 20px 0;
+
+                                                .item-black {
+                                                    font-size: 20px;
+                                                    font-family: DINRoundOTMedium;
+                                                    color: #000000;
+                                                }
+
+                                                &::before {
+                                                    content: "";
+                                                    width: 80px;
+                                                    height: 80px;
+                                                    background-size: 100% 100%;
+                                                    background-repeat: no-repeat;
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    transform: translateY(-50%);
+                                                }
+
+                                                &.icon3 {
+                                                    &::before {
+                                                        background-image: url("../image/s5-timeline-icon3.png");
+                                                    }
+                                                }
+                                            }
+
+                                            &.content-right {
+                                                .timeline-item {
+                                                    padding-left: 100px;
+
+                                                    p {
+                                                        margin-left: 20px;
+                                                    }
+
+                                                    &::before {
+                                                        left: -3px;
+                                                    }
+                                                    &::after {
+                                                        left: 0;
+                                                    }
+                                                }
+                                                .timeline-item-icon {
+                                                    padding-left: 120px;
+                                                    position: relative;
+
+                                                    &::before {
+                                                        left: 20px;
+                                                    }
+                                                }
+                                            }
+
+                                            &.content-left {
+                                                text-align: right;
+
+                                                .timeline-item {
+                                                    padding-right: 100px;
+
+                                                    p {
+                                                        margin-right: 20px;
+                                                    }
+
+                                                    &::before {
+                                                        right: -3px;
+                                                    }
+                                                    &::after {
+                                                        right: 0;
+                                                    }
+                                                }
+                                                .timeline-item-icon {
+                                                    padding-right: 120px;
+                                                    position: relative;
+
+                                                    &::before {
+                                                        right: 20px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .title-group {
+                                            position: absolute;
+                                            top: 40px;
+                                            left: 50%;
+                                            transform: translateX(-50%);
+                                            z-index: 2;
+
+                                            span {
+                                                display: inline-block;
+                                                font-family: SVNGilroyItalic;
+                                                font-size: 36px;
+                                                color: #df3e61;
+                                                background-color: #fff;
+                                                line-height: 41px;
+                                                padding: 10px 30px;
+                                                border: 1px solid #df3e61;
+                                                width: 50%;
+                                                text-align: center;
+                                            }
+                                            .title-top {
+                                                display: flex;
+                                                width: 700px;
+                                            }
+                                            .title-bot {
+                                                display: flex;
+                                                width: 700px;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                // timeline-note
+                                .tl-note {
+                                    border-top: 1px solid #df3e61;
+                                    p {
+                                        font-family: SVNGilroyItalic;
+                                        color: #df3e61;
+                                        font-size: 20px;
+                                        margin: 30px 0;
+                                    }
+                                    ul {
+                                        margin-bottom: 30px;
+
+                                        li {
+                                            padding-left: 30px;
+                                            position: relative;
+                                            font-family: DINRoundOTMedium;
+                                            font-size: 22px;
+                                            color: #df3e61;
+                                            margin: 10px 0;
+
+                                            &::before {
+                                                content: "";
+                                                width: 8px;
+                                                height: 8px;
+                                                border-radius: 50%;
+                                                background-color: #df3e61;
+                                                position: absolute;
+                                                top: 8px;
+                                                left: 5px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.section6 {
+                        .section-detail {
+                            @extend %section-detail;
+
+                            .section-title {
+                                @extend %section-title;
+                            }
+
+                            .format-container {
+                                .format-group {
+                                    margin: 50px 50px 0 50px;
+                                    padding: 20px 0 50px 0;
+                                    border-bottom: 1px solid #df3e61;
+
+                                    .format-title {
+                                        p {
+                                            font-size: 50px;
+                                            line-height: 52px;
+                                            color: #000000;
+                                            span {
+                                                color: #df3e61;
+                                            }
+                                        }
+                                    }
+                                    .format-detail {
+                                        margin-top: 20px;
+
+                                        img {
+                                            @extend %img;
+                                        }
+                                    }
+                                    .visible {
+                                        opacity: 1;
+                                        transform: none;
+                                        transition: all 1s;
+                                    }
+
+                                    &:first-child {
+                                        .format-detail {
+                                            margin-top: -40px;
+                                        }
+                                    }
+                                    &:last-child {
+                                        border: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
