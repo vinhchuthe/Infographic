@@ -34,6 +34,7 @@ $text-color: #fff;
 
 .vct-wrapper {
     @extend %relative;
+    padding-top: 44px;
 
     .desktop {
         @extend %relative;
@@ -417,5 +418,24 @@ $text-color: #fff;
                 }
             }
         }
+    }
+    .mobile {
+        @extend %relative;
+
+        img {
+            @extend %img;
+        }
+    }
+}
+
+// Responsive
+@media (min-width: 992px) {
+    .mobile {
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+    .desktop {
+        display: none;
     }
 }

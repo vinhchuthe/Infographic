@@ -23,7 +23,7 @@
   src: url(./fonts/ExoExtraLight.ttf);
 }
 
-.vct-wrapper, .vct-wrapper .desktop, .vct-wrapper .desktop .w900 .desktop--inner, .vct-wrapper .desktop .w900 .desktop--inner .section {
+.vct-wrapper, .vct-wrapper .desktop, .vct-wrapper .desktop .w900 .desktop--inner, .vct-wrapper .desktop .w900 .desktop--inner .section, .vct-wrapper .mobile {
   position: relative;
   width: 100%;
   height: 100%;
@@ -40,7 +40,7 @@
   background: linear-gradient(90deg, #26315e 0%, #225477 35%, #108074 100%);
 }
 
-.vct-wrapper .desktop .w900 .desktop--inner .section.section1 .section-bg .banner img, .vct-wrapper .desktop .w900 .desktop--inner .section.section1 .section-bg .website .web-right img, .vct-wrapper .desktop .w900 .desktop--inner .section.section1 .section-bg .fanpage .fanpage-left img, .vct-wrapper .desktop .w900 .desktop--inner .section.section2 .section-bg .user-box .user-box-container .user-chart2 .chart-content img, .vct-wrapper .desktop .w900 .desktop--inner .section.section2 .section-bg .user-box .user-box-container .user-chart4 .chart-content img, .vct-wrapper .desktop .w900 .desktop--inner .section.section3 .section-bg .category .category-content img, .vct-wrapper .desktop .w900 .desktop--inner .section.section3 .section-bg .hot-news .news-flex-group .news-item .news-block img, .vct-wrapper .desktop .w900 .desktop--inner .section.section3 .section-bg .hot-news .news-flex-group .news-block img, .vct-wrapper .desktop .w900 .desktop--inner .section.section4 .special-detail .special-img img, .vct-wrapper .desktop .w900 .desktop--inner .section.section4 .footer img {
+.vct-wrapper .desktop .w900 .desktop--inner .section.section1 .section-bg .banner img, .vct-wrapper .desktop .w900 .desktop--inner .section.section1 .section-bg .website .web-right img, .vct-wrapper .desktop .w900 .desktop--inner .section.section1 .section-bg .fanpage .fanpage-left img, .vct-wrapper .desktop .w900 .desktop--inner .section.section2 .section-bg .user-box .user-box-container .user-chart2 .chart-content img, .vct-wrapper .desktop .w900 .desktop--inner .section.section2 .section-bg .user-box .user-box-container .user-chart4 .chart-content img, .vct-wrapper .desktop .w900 .desktop--inner .section.section3 .section-bg .category .category-content img, .vct-wrapper .desktop .w900 .desktop--inner .section.section3 .section-bg .hot-news .news-flex-group .news-item .news-block img, .vct-wrapper .desktop .w900 .desktop--inner .section.section3 .section-bg .hot-news .news-flex-group .news-block img, .vct-wrapper .desktop .w900 .desktop--inner .section.section4 .special-detail .special-img img, .vct-wrapper .desktop .w900 .desktop--inner .section.section4 .footer img, .vct-wrapper .mobile img {
   width: 100%;
   display: block;
 }
@@ -808,5 +808,17 @@ body {
 
 .vct-wrapper .desktop .w900 .desktop--inner .section.section4 .footer {
   margin-top: 50px;
+}
+
+@media (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .desktop {
+    display: none;
+  }
 }
 /*# sourceMappingURL=soha.css.map */

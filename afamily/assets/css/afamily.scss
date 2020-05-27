@@ -1,3 +1,5 @@
+@import "./font/font";
+
 %relative {
     position: relative;
     width: 100%;
@@ -27,11 +29,13 @@
     position: relative;
 
     p {
-        font-size: 58px;
+        font-size: 50px;
         color: #ffffff;
-        font-family: DINRoundOTMedium;
+        font-family: SFDisplay-Bold;
         text-align: center;
-        line-height: 60px;
+        line-height: 1.2;
+        position: relative;
+        z-index: 4;
     }
     &::before {
         content: "";
@@ -124,7 +128,7 @@ body {
                                                 span {
                                                     font-size: 40px;
                                                     line-height: 41px;
-                                                    font-family: SVNGilroyItalic;
+                                                    font-family: SFDisplay-Bold;
                                                     color: #fff;
                                                     background-color: #df3e61;
                                                     padding: 4px 20px;
@@ -169,12 +173,12 @@ body {
                                                             font-size: 60px;
                                                             color: #df3e61;
                                                             line-height: 61px;
-                                                            font-family: DINRoundOTMedium;
+                                                            font-family: SFDisplay-Bold;
                                                             margin-bottom: 15px;
                                                         }
                                                         span {
                                                             font-size: 25px;
-                                                            font-family: SVNGothamBook;
+                                                            font-family: SFDisplay-Regular;
                                                             color: #000000;
                                                         }
                                                     }
@@ -190,6 +194,7 @@ body {
                             }
                         }
                     }
+
                     &.section2 {
                         .section-detail {
                             @extend %section-detail;
@@ -229,14 +234,14 @@ body {
                                                 p {
                                                     font-size: 25px;
                                                     color: #000000;
-                                                    font-family: SVNGothamBook;
+                                                    font-family: SFDisplay-Bold;
                                                     margin: 10px 0;
                                                 }
                                                 span {
                                                     font-size: 60px;
                                                     line-height: 61px;
                                                     color: #df3e61;
-                                                    font-family: DINRoundOTMedium;
+                                                    font-family: SFDisplay-Bold;
                                                 }
                                             }
                                             &.border-left {
@@ -258,7 +263,7 @@ body {
                                                 line-height: 40px;
                                                 color: #fff;
                                                 background-color: #df3e61;
-                                                font-family: SVNGilroyItalic;
+                                                font-family: SFDisplay-Bold;
                                                 padding: 5px 25px;
                                             }
                                         }
@@ -278,11 +283,11 @@ body {
                                                     font-size: 58px;
                                                     line-height: 60px;
                                                     color: #df3e61;
-                                                    font-family: DINRoundOTMedium;
+                                                    font-family: SFDisplay-Bold;
                                                     span {
                                                         font-size: 24px;
                                                         color: #000000;
-                                                        font-family: SVNGothamBook;
+                                                        font-family: SFDisplay-Bold;
 
                                                         &.interaction {
                                                             font-size: 14px;
@@ -383,7 +388,7 @@ body {
                                                     color: #df3e61;
                                                 }
                                                 .categoty-icon {
-                                                    font-family: DINRoundOTMedium;
+                                                    font-family: SFDisplay-Regular;
                                                     font-size: 36px;
                                                     line-height: 40px;
                                                     color: #df3e61;
@@ -446,12 +451,12 @@ body {
                                             transform: translateX(-50%);
                                             z-index: 2;
                                             padding: 8px 25px;
-                                            border: 1px solid #df3e61;
-                                            background-color: #fff;
+                                            // border: 1px solid #df3e61;
+                                            background-color: #df3e61;
                                             span {
                                                 font-family: SVNGilroyItalic;
                                                 font-size: 40px;
-                                                color: #df3e61;
+                                                color: #fff;
                                                 line-height: 41px;
                                             }
                                         }
@@ -481,11 +486,11 @@ body {
                                             bottom: 30px;
                                             left: 50%;
                                             transform: translateX(-50%);
-                                            padding: 10px 30px;
-                                            background-color: #df3e61;
+                                            padding: 5px 20px;
+                                            background-color: #122e3c;
                                             text-decoration: none;
-                                            border-radius: 10px;
-                                            font-size: 30px;
+                                            border-radius: 20px;
+                                            font-size: 20px;
                                             font-family: DINRoundOTMedium;
                                             color: #ffffff;
                                         }
@@ -530,9 +535,9 @@ body {
                                                     top: 50%;
                                                 }
                                                 p {
-                                                    font-size: 25px;
+                                                    font-size: 20px;
                                                     color: #df3e61;
-                                                    font-family: DINRoundOTMedium;
+                                                    font-family: SFDisplay-Regular;
                                                     line-height: 27px;
                                                 }
                                             }
@@ -690,12 +695,12 @@ body {
                                                 display: inline-block;
                                                 font-family: SVNGilroyItalic;
                                                 font-size: 36px;
-                                                color: #df3e61;
-                                                background-color: #fff;
+                                                color: #fff;
+                                                background-color: #df3e61;
                                                 line-height: 41px;
-                                                padding: 10px 30px;
-                                                border: 1px solid #df3e61;
-                                                width: 50%;
+                                                padding: 10px 25px;
+                                                min-width: 123px;
+                                                border: 1px solid #fff;
                                                 text-align: center;
                                             }
                                             .title-top {
@@ -713,9 +718,11 @@ body {
                                 // timeline-note
                                 .tl-note {
                                     border-top: 1px solid #df3e61;
+                                    padding: 15px;
+
                                     p {
-                                        font-family: SVNGilroyItalic;
-                                        color: #df3e61;
+                                        font-family: SFDisplay-Bold;
+                                        color: #122e3c;
                                         font-size: 20px;
                                         margin: 30px 0;
                                     }
@@ -725,7 +732,7 @@ body {
                                         li {
                                             padding-left: 30px;
                                             position: relative;
-                                            font-family: DINRoundOTMedium;
+                                            font-family: SFDisplay-Regular;
                                             font-size: 22px;
                                             color: #df3e61;
                                             margin: 10px 0;
@@ -766,6 +773,7 @@ body {
                                             font-size: 50px;
                                             line-height: 52px;
                                             color: #000000;
+                                            font-family: SVNGothamBook;
                                             span {
                                                 color: #df3e61;
                                             }
@@ -792,6 +800,125 @@ body {
                                     &:last-child {
                                         border: none;
                                     }
+                                }
+                            }
+                        }
+                    }
+
+                    &.section7 {
+                        .section-detail {
+                            @extend %section-detail;
+
+                            .section-container {
+                                @extend %section-container;
+                                padding-bottom: 70px;
+
+                                .section-title {
+                                    @extend %section-title;
+                                    &::before {
+                                        background-image: url("../image/deco-left2.png");
+                                    }
+                                }
+
+                                .media-timeline {
+                                    margin-left: 80px;
+                                    margin-right: 50px;
+                                    border-left: 1px solid #df3e61;
+
+                                    .media-block {
+                                        padding-left: 100px;
+                                        position: relative;
+                                        transform: translateY(40px);
+                                        transition: all 1s;
+
+                                        .media-title {
+                                            padding: 15px 0 15px 30px;
+                                            position: relative;
+                                            display: flex;
+                                            align-items: center;
+
+                                            span {
+                                                font-family: SFDisplay-Bold;
+                                                font-size: 40px;
+                                                line-height: 45px;
+                                                color: #df3e61;
+                                                padding: 10px 30px;
+                                                margin-left: 30px;
+                                            }
+                                            img {
+                                                width: 90px;
+                                                @extend %img;
+                                            }
+                                            .media-link {
+                                                display: block;
+                                                width: 150px;
+                                                position: absolute;
+                                                top: 50%;
+                                                transform: translateY(-50%);
+                                                right: 0;
+
+                                                img {
+                                                    @extend %img;
+                                                }
+                                            }
+
+                                            &::before {
+                                                content: "";
+                                                width: 7px;
+                                                height: 7px;
+                                                border-radius: 50%;
+                                                position: absolute;
+                                                background-color: #df3e61;
+                                                top: 50%;
+                                                left: -104px;
+                                                transform: translateY(-50%);
+                                            }
+                                            &::after {
+                                                content: "";
+                                                height: 1px;
+                                                width: 100px;
+                                                background-color: #df3e61;
+                                                position: absolute;
+                                                top: 50%;
+                                                left: -100px;
+                                            }
+                                        }
+                                        .media-content {
+                                            margin: 10px 0 10px 20px;
+                                            p {
+                                                font-family: SFDisplay-Regular;
+                                                color: #000000;
+                                                font-size: 21px;
+                                                margin-bottom: 20px;
+                                                padding-left: 20px;
+                                                position: relative;
+
+                                                &::before {
+                                                    content: "";
+                                                    width: 7px;
+                                                    height: 7px;
+                                                    border-radius: 50%;
+                                                    background-color: #df3e61;
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    left: 0;
+                                                    transform: translateY(-50%);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.footer {
+                        .section-detail {
+                            .footer-content {
+                                @extend %relative;
+
+                                img {
+                                    @extend %img;
                                 }
                             }
                         }

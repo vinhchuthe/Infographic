@@ -1,4 +1,19 @@
-.vct-wrapper, .vct-wrapper .desktop, .vct-wrapper .desktop .w980 .desktop-inner, .vct-wrapper .desktop .w980 .desktop-inner .banner {
+@font-face {
+  font-family: SVNGothamBook;
+  src: url(./font/SVNGothamBook.ttf);
+}
+
+@font-face {
+  font-family: SFDisplay-Bold;
+  src: url(./font/SFDisplay-Bold.otf);
+}
+
+@font-face {
+  font-family: SFDisplay-Regular;
+  src: url(./font/SFDisplay-Regular.otf);
+}
+
+.vct-wrapper, .vct-wrapper .desktop, .vct-wrapper .desktop .w980 .desktop-inner, .vct-wrapper .desktop .w980 .desktop-inner .banner, .vct-wrapper .desktop .w980 .desktop-inner .section.footer .section-detail .footer-content {
   position: relative;
   width: 100%;
   height: 100%;
@@ -10,34 +25,36 @@
   overflow: hidden;
 }
 
-.vct-wrapper .desktop .w980 .desktop-inner .banner img, .vct-wrapper .desktop .w980 .desktop-inner .section.section4 .section-detail .section-container .category-section .category .category-box img, .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail .section-container .vertical-timeline .timeline-group .left img, .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail .section-container .vertical-timeline .timeline-group .right img, .vct-wrapper .desktop .w980 .desktop-inner .section.section6 .section-detail .format-container .format-group .format-detail img {
+.vct-wrapper .desktop .w980 .desktop-inner .banner img, .vct-wrapper .desktop .w980 .desktop-inner .section.section4 .section-detail .section-container .category-section .category .category-box img, .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail .section-container .vertical-timeline .timeline-group .left img, .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail .section-container .vertical-timeline .timeline-group .right img, .vct-wrapper .desktop .w980 .desktop-inner .section.section6 .section-detail .format-container .format-group .format-detail img, .vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container .media-timeline .media-block .media-title img, .vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container .media-timeline .media-block .media-title .media-link img, .vct-wrapper .desktop .w980 .desktop-inner .section.footer .section-detail .footer-content img {
   width: 100%;
   display: block;
 }
 
-.vct-wrapper .desktop .w980 .desktop-inner .section.section1 .section-detail, .vct-wrapper .desktop .w980 .desktop-inner .section.section2 .section-detail, .vct-wrapper .desktop .w980 .desktop-inner .section.section3 .section-detail, .vct-wrapper .desktop .w980 .desktop-inner .section.section4 .section-detail, .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail, .vct-wrapper .desktop .w980 .desktop-inner .section.section6 .section-detail {
+.vct-wrapper .desktop .w980 .desktop-inner .section.section1 .section-detail, .vct-wrapper .desktop .w980 .desktop-inner .section.section2 .section-detail, .vct-wrapper .desktop .w980 .desktop-inner .section.section3 .section-detail, .vct-wrapper .desktop .w980 .desktop-inner .section.section4 .section-detail, .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail, .vct-wrapper .desktop .w980 .desktop-inner .section.section6 .section-detail, .vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail {
   padding: 0 13px 0 16px;
 }
 
-.vct-wrapper .desktop .w980 .desktop-inner .section.section1 .section-detail .section-container, .vct-wrapper .desktop .w980 .desktop-inner .section.section2 .section-detail .section-container, .vct-wrapper .desktop .w980 .desktop-inner .section.section3 .section-detail .section-container, .vct-wrapper .desktop .w980 .desktop-inner .section.section4 .section-detail .section-container, .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail .section-container {
+.vct-wrapper .desktop .w980 .desktop-inner .section.section1 .section-detail .section-container, .vct-wrapper .desktop .w980 .desktop-inner .section.section2 .section-detail .section-container, .vct-wrapper .desktop .w980 .desktop-inner .section.section3 .section-detail .section-container, .vct-wrapper .desktop .w980 .desktop-inner .section.section4 .section-detail .section-container, .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail .section-container, .vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container {
   border: 1px solid #df3e61;
 }
 
-.vct-wrapper .desktop .w980 .desktop-inner .section.section2 .section-detail .section-container .section-title, .vct-wrapper .desktop .w980 .desktop-inner .section.section3 .section-detail .section-container .section-title, .vct-wrapper .desktop .w980 .desktop-inner .section.section4 .section-detail .section-container .section-title, .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail .section-container .section-title, .vct-wrapper .desktop .w980 .desktop-inner .section.section6 .section-detail .section-title {
+.vct-wrapper .desktop .w980 .desktop-inner .section.section2 .section-detail .section-container .section-title, .vct-wrapper .desktop .w980 .desktop-inner .section.section3 .section-detail .section-container .section-title, .vct-wrapper .desktop .w980 .desktop-inner .section.section4 .section-detail .section-container .section-title, .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail .section-container .section-title, .vct-wrapper .desktop .w980 .desktop-inner .section.section6 .section-detail .section-title, .vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container .section-title {
   background-color: #df3e61;
   padding: 30px 0;
   position: relative;
 }
 
-.vct-wrapper .desktop .w980 .desktop-inner .section.section2 .section-detail .section-container .section-title p, .vct-wrapper .desktop .w980 .desktop-inner .section.section3 .section-detail .section-container .section-title p, .vct-wrapper .desktop .w980 .desktop-inner .section.section4 .section-detail .section-container .section-title p, .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail .section-container .section-title p, .vct-wrapper .desktop .w980 .desktop-inner .section.section6 .section-detail .section-title p {
-  font-size: 58px;
+.vct-wrapper .desktop .w980 .desktop-inner .section.section2 .section-detail .section-container .section-title p, .vct-wrapper .desktop .w980 .desktop-inner .section.section3 .section-detail .section-container .section-title p, .vct-wrapper .desktop .w980 .desktop-inner .section.section4 .section-detail .section-container .section-title p, .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail .section-container .section-title p, .vct-wrapper .desktop .w980 .desktop-inner .section.section6 .section-detail .section-title p, .vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container .section-title p {
+  font-size: 50px;
   color: #ffffff;
-  font-family: DINRoundOTMedium;
+  font-family: SFDisplay-Bold;
   text-align: center;
-  line-height: 60px;
+  line-height: 1.2;
+  position: relative;
+  z-index: 4;
 }
 
-.vct-wrapper .desktop .w980 .desktop-inner .section.section2 .section-detail .section-container .section-title::before, .vct-wrapper .desktop .w980 .desktop-inner .section.section3 .section-detail .section-container .section-title::before, .vct-wrapper .desktop .w980 .desktop-inner .section.section4 .section-detail .section-container .section-title::before, .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail .section-container .section-title::before, .vct-wrapper .desktop .w980 .desktop-inner .section.section6 .section-detail .section-title::before {
+.vct-wrapper .desktop .w980 .desktop-inner .section.section2 .section-detail .section-container .section-title::before, .vct-wrapper .desktop .w980 .desktop-inner .section.section3 .section-detail .section-container .section-title::before, .vct-wrapper .desktop .w980 .desktop-inner .section.section4 .section-detail .section-container .section-title::before, .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail .section-container .section-title::before, .vct-wrapper .desktop .w980 .desktop-inner .section.section6 .section-detail .section-title::before, .vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container .section-title::before {
   content: "";
   width: 160px;
   height: 100%;
@@ -50,7 +67,7 @@
   z-index: 3;
 }
 
-.vct-wrapper .desktop .w980 .desktop-inner .section.section2 .section-detail .section-container .section-title::after, .vct-wrapper .desktop .w980 .desktop-inner .section.section3 .section-detail .section-container .section-title::after, .vct-wrapper .desktop .w980 .desktop-inner .section.section4 .section-detail .section-container .section-title::after, .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail .section-container .section-title::after, .vct-wrapper .desktop .w980 .desktop-inner .section.section6 .section-detail .section-title::after {
+.vct-wrapper .desktop .w980 .desktop-inner .section.section2 .section-detail .section-container .section-title::after, .vct-wrapper .desktop .w980 .desktop-inner .section.section3 .section-detail .section-container .section-title::after, .vct-wrapper .desktop .w980 .desktop-inner .section.section4 .section-detail .section-container .section-title::after, .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail .section-container .section-title::after, .vct-wrapper .desktop .w980 .desktop-inner .section.section6 .section-detail .section-title::after, .vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container .section-title::after {
   content: "";
   width: 120px;
   height: 100%;
@@ -112,7 +129,7 @@ body {
 .vct-wrapper .desktop .w980 .desktop-inner .section.section1 .section-detail .section-container .s1-timeline .timeline-box .timeline-block .title span {
   font-size: 40px;
   line-height: 41px;
-  font-family: SVNGilroyItalic;
+  font-family: SFDisplay-Bold;
   color: #fff;
   background-color: #df3e61;
   padding: 4px 20px;
@@ -171,13 +188,13 @@ body {
   font-size: 60px;
   color: #df3e61;
   line-height: 61px;
-  font-family: DINRoundOTMedium;
+  font-family: SFDisplay-Bold;
   margin-bottom: 15px;
 }
 
 .vct-wrapper .desktop .w980 .desktop-inner .section.section1 .section-detail .section-container .s1-timeline .timeline-box .timeline-block .text-group-box .group .text-group span {
   font-size: 25px;
-  font-family: SVNGothamBook;
+  font-family: SFDisplay-Regular;
   color: #000000;
 }
 
@@ -226,7 +243,7 @@ body {
 .vct-wrapper .desktop .w980 .desktop-inner .section.section2 .section-detail .section-container .section-content .like-container .like-group .like-content p {
   font-size: 25px;
   color: #000000;
-  font-family: SVNGothamBook;
+  font-family: SFDisplay-Bold;
   margin: 10px 0;
 }
 
@@ -234,7 +251,7 @@ body {
   font-size: 60px;
   line-height: 61px;
   color: #df3e61;
-  font-family: DINRoundOTMedium;
+  font-family: SFDisplay-Bold;
 }
 
 .vct-wrapper .desktop .w980 .desktop-inner .section.section2 .section-detail .section-container .section-content .like-container .like-group.border-left {
@@ -256,7 +273,7 @@ body {
   line-height: 40px;
   color: #fff;
   background-color: #df3e61;
-  font-family: SVNGilroyItalic;
+  font-family: SFDisplay-Bold;
   padding: 5px 25px;
 }
 
@@ -285,13 +302,13 @@ body {
   font-size: 58px;
   line-height: 60px;
   color: #df3e61;
-  font-family: DINRoundOTMedium;
+  font-family: SFDisplay-Bold;
 }
 
 .vct-wrapper .desktop .w980 .desktop-inner .section.section2 .section-detail .section-container .section-content .post .post-content .post-text p span {
   font-size: 24px;
   color: #000000;
-  font-family: SVNGothamBook;
+  font-family: SFDisplay-Bold;
 }
 
 .vct-wrapper .desktop .w980 .desktop-inner .section.section2 .section-detail .section-container .section-content .post .post-content .post-text p span.interaction {
@@ -356,7 +373,7 @@ body {
 }
 
 .vct-wrapper .desktop .w980 .desktop-inner .section.section4 .section-detail .section-container .category-section .category .category-box .icon-group .categoty-icon {
-  font-family: DINRoundOTMedium;
+  font-family: SFDisplay-Regular;
   font-size: 36px;
   line-height: 40px;
   color: #df3e61;
@@ -408,14 +425,13 @@ body {
           transform: translateX(-50%);
   z-index: 2;
   padding: 8px 25px;
-  border: 1px solid #df3e61;
-  background-color: #fff;
+  background-color: #df3e61;
 }
 
 .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail .section-container .vertical-timeline .timeline-group .title span {
   font-family: SVNGilroyItalic;
   font-size: 40px;
-  color: #df3e61;
+  color: #fff;
   line-height: 41px;
 }
 
@@ -440,11 +456,11 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  padding: 10px 30px;
-  background-color: #df3e61;
+  padding: 5px 20px;
+  background-color: #122e3c;
   text-decoration: none;
-  border-radius: 10px;
-  font-size: 30px;
+  border-radius: 20px;
+  font-size: 20px;
   font-family: DINRoundOTMedium;
   color: #ffffff;
 }
@@ -504,9 +520,9 @@ body {
 }
 
 .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail .section-container .vertical-timeline .timeline-group .timeline-container .timeline-item p {
-  font-size: 25px;
+  font-size: 20px;
   color: #df3e61;
-  font-family: DINRoundOTMedium;
+  font-family: SFDisplay-Regular;
   line-height: 27px;
 }
 
@@ -672,12 +688,12 @@ body {
   display: inline-block;
   font-family: SVNGilroyItalic;
   font-size: 36px;
-  color: #df3e61;
-  background-color: #fff;
+  color: #fff;
+  background-color: #df3e61;
   line-height: 41px;
-  padding: 10px 30px;
-  border: 1px solid #df3e61;
-  width: 50%;
+  padding: 10px 25px;
+  min-width: 123px;
+  border: 1px solid #fff;
   text-align: center;
 }
 
@@ -697,11 +713,12 @@ body {
 
 .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail .section-container .tl-note {
   border-top: 1px solid #df3e61;
+  padding: 15px;
 }
 
 .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail .section-container .tl-note p {
-  font-family: SVNGilroyItalic;
-  color: #df3e61;
+  font-family: SFDisplay-Bold;
+  color: #122e3c;
   font-size: 20px;
   margin: 30px 0;
 }
@@ -713,7 +730,7 @@ body {
 .vct-wrapper .desktop .w980 .desktop-inner .section.section5 .section-detail .section-container .tl-note ul li {
   padding-left: 30px;
   position: relative;
-  font-family: DINRoundOTMedium;
+  font-family: SFDisplay-Regular;
   font-size: 22px;
   color: #df3e61;
   margin: 10px 0;
@@ -740,6 +757,7 @@ body {
   font-size: 50px;
   line-height: 52px;
   color: #000000;
+  font-family: SVNGothamBook;
 }
 
 .vct-wrapper .desktop .w980 .desktop-inner .section.section6 .section-detail .format-container .format-group .format-title p span {
@@ -764,5 +782,111 @@ body {
 
 .vct-wrapper .desktop .w980 .desktop-inner .section.section6 .section-detail .format-container .format-group:last-child {
   border: none;
+}
+
+.vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container {
+  padding-bottom: 70px;
+}
+
+.vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container .section-title::before {
+  background-image: url("../image/deco-left2.png");
+}
+
+.vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container .media-timeline {
+  margin-left: 80px;
+  margin-right: 50px;
+  border-left: 1px solid #df3e61;
+}
+
+.vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container .media-timeline .media-block {
+  padding-left: 100px;
+  position: relative;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container .media-timeline .media-block .media-title {
+  padding: 15px 0 15px 30px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container .media-timeline .media-block .media-title span {
+  font-family: SFDisplay-Bold;
+  font-size: 40px;
+  line-height: 45px;
+  color: #df3e61;
+  padding: 10px 30px;
+  margin-left: 30px;
+}
+
+.vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container .media-timeline .media-block .media-title img {
+  width: 90px;
+}
+
+.vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container .media-timeline .media-block .media-title .media-link {
+  display: block;
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+}
+
+.vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container .media-timeline .media-block .media-title::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #df3e61;
+  top: 50%;
+  left: -104px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container .media-timeline .media-block .media-title::after {
+  content: "";
+  height: 1px;
+  width: 100px;
+  background-color: #df3e61;
+  position: absolute;
+  top: 50%;
+  left: -100px;
+}
+
+.vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container .media-timeline .media-block .media-content {
+  margin: 10px 0 10px 20px;
+}
+
+.vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container .media-timeline .media-block .media-content p {
+  font-family: SFDisplay-Regular;
+  color: #000000;
+  font-size: 21px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.vct-wrapper .desktop .w980 .desktop-inner .section.section7 .section-detail .section-container .media-timeline .media-block .media-content p::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #df3e61;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 /*# sourceMappingURL=afamily.css.map */

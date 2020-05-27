@@ -18,7 +18,7 @@
   src: url("./fonts/SFText-Light.otf");
 }
 
-.vct-wrapper, .vct-wrapper .desktop, .vct-wrapper .desktop .desktop-bg, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .banner, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section1 .section-content, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section2 .section-content, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section2 .section-content .section-img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section3 .section-content, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section3 .section-content .section-img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section4 .section-content, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section4 .section-content .section-img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section5 .section-content, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section5 .section-content .section-img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section6 .section-content, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section6 .section-content .section-img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section7 .section-content, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section7 .section-content .section-img {
+.vct-wrapper, .vct-wrapper .desktop, .vct-wrapper .desktop .desktop-bg, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .banner, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section1 .section-content, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section2 .section-content, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section2 .section-content .section-img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section3 .section-content, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section3 .section-content .section-img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section4 .section-content, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section4 .section-content .section-img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section5 .section-content, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section5 .section-content .section-img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section6 .section-content, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section6 .section-content .section-img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section7 .section-content, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section7 .section-content .section-img, .vct-wrapper .mobile {
   position: relative;
   width: 100%;
   height: 100%;
@@ -30,7 +30,7 @@
   overflow: hidden;
 }
 
-.vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .banner img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section2 .section-content .section-img img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section3 .section-content .section-img img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section4 .section-content .section-img img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section5 .section-content .section-img img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section6 .section-content .section-img img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section7 .section-content .section-img img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.footer .section-content .footer-box .group-right .qr-code img {
+.vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .banner img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section2 .section-content .section-img img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section3 .section-content .section-img img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section4 .section-content .section-img img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section5 .section-content .section-img img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section6 .section-content .section-img img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.section7 .section-content .section-img img, .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.footer .section-content .footer-box .group-right .qr-code img, .vct-wrapper .mobile img {
   width: 100%;
   display: block;
 }
@@ -45,6 +45,10 @@
   background-image: url("../image/box-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.vct-wrapper {
+  padding-top: 44px;
 }
 
 .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner {
@@ -330,5 +334,17 @@
 
 .vct-wrapper .desktop .desktop-bg .w980 .desktop--inner .section.footer .section-content .footer-box .group-right .qr-code {
   max-width: 300px;
+}
+
+@media (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .desktop {
+    display: none;
+  }
 }
 /*# sourceMappingURL=genk.css.map */

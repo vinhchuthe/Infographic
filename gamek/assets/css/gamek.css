@@ -65,11 +65,14 @@ img {
 
 .desktop {
   margin-bottom: 20px;
+  padding-top: 44px;
 }
 
 .mobile {
+  padding-top: 44px;
   width: 100%;
   background-color: #fff;
+  position: relative;
 }
 
 .banner {
@@ -221,22 +224,6 @@ img {
 .section.section2 {
   margin-top: 30px;
   padding: 0 15px;
-}
-
-.section.section2 .chart {
-  opacity: 0;
-  -webkit-transform: translateY(-40px);
-          transform: translateY(-40px);
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.section.section2 .visible {
-  opacity: 1;
-  -webkit-transform: none;
-          transform: none;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 .section.section2 .section-detail {
@@ -484,11 +471,6 @@ img {
 .section.section5 .section-detail .s5-timeline-container .s5-timline-box .s5-timline-block {
   padding: 25px 0;
   position: relative;
-  opacity: 0;
-  -webkit-transform: translateY(40px);
-          transform: translateY(40px);
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 .section.section5 .section-detail .s5-timeline-container .s5-timline-box .s5-timline-block .timeline-title {
@@ -629,11 +611,6 @@ img {
 
 .section.section6 .section-detail .minisite-img img {
   margin: 20px 0;
-  opacity: 0;
-  -webkit-transform: translateY(-40px);
-          transform: translateY(-40px);
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 .section.section6 .section-detail .minisite-img img:first-child {

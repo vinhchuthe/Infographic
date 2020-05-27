@@ -38,6 +38,15 @@ img {
   display: block;
 }
 
+.desktop {
+  padding-top: 44px;
+}
+
+.mobile {
+  padding-top: 44px;
+  position: relative;
+}
+
 .title {
   color: #ffffff;
   font-family: SFPRODISPLAYREGULAR;
@@ -729,6 +738,18 @@ img {
             transform: rotate(-15deg);
     -webkit-transition: all 1s;
     transition: all 1s;
+  }
+}
+
+@media (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .desktop {
+    display: none;
   }
 }
 /*# sourceMappingURL=cafebiz.css.map */

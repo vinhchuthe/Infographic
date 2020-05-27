@@ -864,4 +864,23 @@ body {
             }
         }
     }
+    .mobile {
+        @extend %relative;
+
+        img {
+            @extend %img;
+        }
+    }
+}
+
+// Responsive
+@media (min-width: 992px) {
+    .mobile {
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+    .desktop {
+        display: none;
+    }
 }
